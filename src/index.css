@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --veltronix-navy: #031d33;
+  --veltronix-royal: #0a4fff;
+  --veltronix-gold: #f5c242;
+  --veltronix-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: var(--veltronix-navy);
+  color: var(--veltronix-white);
+}
