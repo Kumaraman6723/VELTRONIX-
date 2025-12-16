@@ -1,6 +1,5 @@
 import React from "react";
-
-
+import { Link } from "react-router-dom";
 
 function Hero() {
 
@@ -87,9 +86,9 @@ function Hero() {
 
             </a>
 
-            <a
+            <Link
 
-              href="#services"
+              to="/what-we-do"
 
               className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-[#0A4FFF] hover:bg-white/5"
 
@@ -97,7 +96,7 @@ function Hero() {
 
               Explore Our Services
 
-            </a>
+            </Link>
 
           </div>
 
