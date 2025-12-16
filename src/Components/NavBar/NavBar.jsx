@@ -19,7 +19,7 @@ function NavBar() {
     <>
       <nav className="sticky top-0 z-40 border-b border-white/10 bg-[#031D33]/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3 transition-opacity hover:opacity-80">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0A4FFF] overflow-hidden ring-2 ring-[#0A4FFF]/60 ring-offset-2 ring-offset-[#031D33]">
               <img
                 src="https://res.cloudinary.com/ddoqrvtqn/image/upload/v1765886744/cropped_circle_image_u0nhq5.png"
@@ -33,7 +33,7 @@ function NavBar() {
               </p>
               <p className="text-[11px] text-white/70">Technologies</p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop nav */}
           <div className="hidden gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80 shadow-sm shadow-black/40 backdrop-blur lg:flex">
@@ -108,7 +108,7 @@ function NavBar() {
         >
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-white/10">
-            <div className="flex items-center gap-3">
+            <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3 transition-opacity hover:opacity-80">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0A4FFF] overflow-hidden ring-2 ring-[#0A4FFF]/60 ring-offset-2 ring-offset-[#031D33]">
                 <img
                   src="https://res.cloudinary.com/ddoqrvtqn/image/upload/v1765886744/cropped_circle_image_u0nhq5.png"
@@ -122,7 +122,7 @@ function NavBar() {
                 </p>
                 <p className="text-[11px] text-white/70">Technologies</p>
               </div>
-            </div>
+            </Link>
             <button
               type="button"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white transition-all hover:border-[#F5C242] hover:bg-white/5 hover:text-[#F5C242]"
