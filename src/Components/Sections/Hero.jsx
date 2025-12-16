@@ -35,11 +35,11 @@ function Hero() {
 
             <div>
 
-              <p className="text-xs font-semibold tracking-[0.25em] text-[#F5C242]">
+              <h2 className="text-xs font-semibold tracking-[0.25em] text-[#F5C242]">
 
                 VELTRONIX TECHNOLOGIES
 
-              </p>
+              </h2>
 
               <p className="text-sm text-white/70">
                 IT Consulting • Digital Transformation • AI Solutions
@@ -51,21 +51,25 @@ function Hero() {
 
           <h1 className="mb-4 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
 
-            Powering Intelligence.
+            <span className="text-white">Veltronix Technologies</span>
 
-            <span className="block text-[#F5C242]">Transforming Technology.</span>
+            <span className="block text-[#F5C242]">Powering Intelligence. Transforming Technology.</span>
 
           </h1>
 
           <p className="mb-8 max-w-xl text-sm text-white/80 sm:text-base">
 
-            Veltronix Technologies delivers enterprise-grade IT consulting,
+            <strong>Veltronix Technologies</strong> delivers enterprise-grade IT consulting,
 
             digital transformation, and AI-driven solutions that modernize
 
             operations, unlock automation, and build resilient digital
 
-            platforms.
+            platforms. As a leading technology partner, <strong>Veltronix Technologies</strong>
+
+            helps businesses transform their digital infrastructure and achieve
+
+            measurable business outcomes.
 
           </p>
 
