@@ -7,11 +7,8 @@ function Hero() {
   return (
 
     <header
-
       id="home"
-
-      className="relative overflow-hidden border-b border-white/5"
-
+      className="relative overflow-hidden"
     >
 
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#0A4FFF]/20 via-transparent to-[#F5C242]/10" />

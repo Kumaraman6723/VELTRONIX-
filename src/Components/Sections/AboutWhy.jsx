@@ -4,7 +4,7 @@ function AboutWhy() {
   return (
     <section
       id="about"
-      className="border-b border-white/5 bg-[#041A2B] px-6 py-16 sm:py-20"
+      className="bg-[#031D33] px-6 py-16 sm:py-20"
     >
       <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.2fr,1fr]">
         <div>

@@ -4,7 +4,7 @@ function Careers() {
   return (
     <section
       id="careers"
-      className="border-b border-white/5 bg-[#031D33] px-6 py-16 sm:py-20"
+      className="bg-[#031D33] px-6 py-16 sm:py-20"
     >
       <div className="mx-auto max-w-4xl text-center">
         <p className="text-xs font-semibold tracking-[0.3em] text-[#F5C242]">

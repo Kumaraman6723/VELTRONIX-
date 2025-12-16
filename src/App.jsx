@@ -1,35 +1,41 @@
 import React from "react";
-import NavBar from "./Components/NavBar/NavBar";
-import Footer from "./Components/Footer/Footer";
-import Hero from "./Components/Sections/Hero";
-import WebServices from "./Components/Sections/WebServices";
-import DigitalAI from "./Components/Sections/DigitalAI";
-import SoftwareApplications from "./Components/Sections/SoftwareApplications";
-import IndustriesApproach from "./Components/Sections/IndustriesApproach";
-import AboutWhy from "./Components/Sections/AboutWhy";
-import SuccessStories from "./Components/Sections/SuccessStories";
-import Insights from "./Components/Sections/Insights";
-import Careers from "./Components/Sections/Careers";
-import Contact from "./Components/Sections/Contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import HomeSectionPage from "./pages/Landing/HomeSectionPage";
+import WhatWeDoPage from "./pages/Landing/WhatWeDoPage";
+import DigitalAIPage from "./pages/Landing/DigitalAIPage";
+import SoftwareApplicationsPage from "./pages/Landing/SoftwareApplicationsPage";
+import IndustriesPage from "./pages/Landing/IndustriesPage";
+import WhyVeltronixPage from "./pages/Landing/WhyVeltronixPage";
+import InsightsPage from "./pages/Landing/InsightsPage";
+import SuccessStoriesPage from "./pages/Landing/SuccessStoriesPage";
+import CareersPage from "./pages/Landing/CareersPage";
+import ContactPage from "./pages/Landing/ContactPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#031D33] text-white">
-      <NavBar />
-      <main>
-        <Hero />
-        <WebServices />
-        <DigitalAI />
-        <SoftwareApplications />
-        <IndustriesApproach />
-        <AboutWhy />
-        <SuccessStories />
-        <Insights />
-        <Careers />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<HomeSectionPage />} />
+          <Route path="/what-we-do" element={<WhatWeDoPage />} />
+          <Route path="/digital-ai" element={<DigitalAIPage />} />
+          <Route
+            path="/software-applications"
+            element={<SoftwareApplicationsPage />}
+          />
+          <Route path="/industries" element={<IndustriesPage />} />
+          <Route path="/why-veltronix" element={<WhyVeltronixPage />} />
+          <Route path="/insights" element={<InsightsPage />} />
+          <Route
+            path="/success-stories"
+            element={<SuccessStoriesPage />}
+          />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

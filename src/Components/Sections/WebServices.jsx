@@ -4,7 +4,7 @@ function WebServices() {
   return (
     <section
       id="what-we-do"
-      className="border-b border-white/5 bg-[#041A2B] px-6 py-16 sm:py-20"
+      className="bg-[#031D33] px-6 py-16 sm:py-20"
     >
       <div className="mx-auto max-w-6xl">
         <div className="mb-8">

@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-[#020F1C] px-6 py-8 text-xs text-white/60 border-t border-white/10">
+    <footer className="bg-[#020F1C] px-6 py-8 text-xs text-white/60">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-semibold text-white">Veltronix Technologies</p>

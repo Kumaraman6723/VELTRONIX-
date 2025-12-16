@@ -1,18 +1,17 @@
 import React from "react";
-
-
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const links = [
-    { href: "#home", label: "Home" },
-    { href: "#what-we-do", label: "What We Do" },
-    { href: "#digital-ai", label: "Digital & AI" },
-    { href: "#industries", label: "Industries" },
-    { href: "#insights", label: "Insights" },
-    { href: "#why-veltronix", label: "Why Veltronix" },
-    { href: "#success-stories", label: "Success Stories" },
-    { href: "#careers", label: "Careers" },
-    { href: "#contact", label: "Contact Us" },
+    { to: "/", label: "Home" },
+    { to: "/what-we-do", label: "What We Do" },
+    { to: "/digital-ai", label: "Digital & AI" },
+    { to: "/industries", label: "Industries" },
+    { to: "/insights", label: "Insights" },
+    { to: "/why-veltronix", label: "Why Veltronix" },
+    { to: "/success-stories", label: "Success Stories" },
+    { to: "/careers", label: "Careers" },
+    { to: "/contact", label: "Contact Us" },
   ];
 
   return (
@@ -35,29 +34,26 @@ function NavBar() {
         </div>
         <div className="hidden gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80 shadow-sm shadow-black/40 backdrop-blur lg:flex">
           {links.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
+            <Link
+              key={item.to}
+              to={item.to}
               className="rounded-full px-3 py-1 transition hover:bg-white/5 hover:text-[#F5C242]"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="flex gap-3 text-xs sm:text-sm lg:hidden">
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="rounded-full bg-[#F5C242] px-4 py-2 font-semibold text-[#031D33] shadow-md shadow-black/40 transition hover:-translate-y-0.5 hover:bg-[#ffd465]"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
   );
 }
 
-
-
 export default NavBar;
-

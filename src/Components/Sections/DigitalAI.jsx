@@ -31,7 +31,7 @@ function DigitalAI() {
   return (
     <section
       id="digital-ai"
-      className="border-b border-white/5 bg-[#031D33] px-6 py-16 sm:py-20"
+      className="bg-[#031D33] px-6 py-16 sm:py-20"
     >
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 max-w-2xl">

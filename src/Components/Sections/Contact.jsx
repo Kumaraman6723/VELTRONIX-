@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="border-b border-white/5 bg-[#031D33] px-6 py-16 sm:py-20"
+      className="bg-[#031D33] px-6 py-16 sm:py-20"
     >
       <div className="mx-auto max-w-4xl">
         <div className="mb-8 text-center">
@@ -19,7 +19,7 @@ function Contact() {
             you to explore how Veltronix Technologies can help.
           </p>
         </div>
-        <form className="space-y-4 rounded-2xl border border-white/10 bg-[#041A2B] p-6 text-sm">
+        <form className="space-y-4 rounded-2xl border border-white/10 bg-[#031D33] p-6 text-sm">
           <div className="grid gap-4 sm:grid-cols-2">
             <div>
               <label className="mb-1 block text-xs font-medium text-white/80">
