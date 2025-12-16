@@ -15,9 +15,6 @@ function Footer() {
             © {new Date().getFullYear()} Veltronix Technologies. All rights
             reserved.
           </p>
-          <p className="text-white/40">
-            Built with modern web, cloud, and AI-native practices.
-          </p>
         </div>
       </div>
     </footer>

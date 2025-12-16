@@ -73,7 +73,7 @@ function Hero() {
 
             <a
 
-              href="#contact"
+              href="/contact"
 
               className="rounded-full bg-[#F5C242] px-6 py-3 text-sm font-semibold text-[#031D33] shadow-lg shadow-black/40 transition hover:-translate-y-0.5 hover:bg-[#ffd465]"
 

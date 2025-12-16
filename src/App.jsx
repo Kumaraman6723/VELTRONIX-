@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import HomeSectionPage from "./pages/Landing/HomeSectionPage";
 import WhatWeDoPage from "./pages/Landing/WhatWeDoPage";
-import DigitalAIPage from "./pages/Landing/DigitalAIPage";
 import SoftwareApplicationsPage from "./pages/Landing/SoftwareApplicationsPage";
 import IndustriesPage from "./pages/Landing/IndustriesPage";
 import WhyVeltronixPage from "./pages/Landing/WhyVeltronixPage";
@@ -19,7 +18,6 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomeSectionPage />} />
           <Route path="/what-we-do" element={<WhatWeDoPage />} />
-          <Route path="/digital-ai" element={<DigitalAIPage />} />
           <Route
             path="/software-applications"
             element={<SoftwareApplicationsPage />}
