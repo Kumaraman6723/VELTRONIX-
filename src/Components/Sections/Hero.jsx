@@ -19,7 +19,7 @@ function Hero() {
 
           <div className="mb-6 flex items-center gap-3">
 
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0A4FFF] overflow-hidden">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0A4FFF] overflow-hidden ring-2 ring-[#0A4FFF]/60 ring-offset-2 ring-offset-[#031D33]">
 
               <img
 
